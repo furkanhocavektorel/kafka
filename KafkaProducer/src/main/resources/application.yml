@@ -6,4 +6,5 @@ spring:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-
+      properties:
+        spring.json.type.mapping: Kargo:com.vektorel.kafkaproducer.dto.KargoKafkaDto
